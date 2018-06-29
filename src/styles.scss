@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~handsontable/dist/handsontable.full.css';
+@import '../src/assets/pure-release-1.0.0/pure-min.css';
+
+/* issues:Couldn't set selectedTextBackgroundColor from default () */
+::selection {
+  background: white;
+  /* WebKit/Blink Browsers */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}

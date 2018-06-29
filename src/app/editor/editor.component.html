@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="edit-mode">
+    <div class="wrapper">
+      <div class="toolbars">
+        <div class="pure-menu pure-menu-horizontal">
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+              <a class="pure-menu-link">檔案</a>
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item" (click)="openCsv()">
+                  <a class="pure-menu-link">開啟檔案</a>
+                </li>
+                <li class="pure-menu-item" (click)="openDropZoneWin()">
+                  <a class="pure-menu-link">拖拉匯入</a>
+                </li>
+                <li class="pure-menu-item" [ngClass]="{'pure-menu-disabled': data.length==0}" (click)="saveFile()">
+                  <a class="pure-menu-link">存檔</a>
+                </li>
+                <li class="pure-menu-item" [ngClass]="{'pure-menu-disabled': data.length==0}" (click)="saveFileAs()">
+                  <a class="pure-menu-link">另存新檔</a>
+                </li>
+                <li class="pure-menu-item" (click)="quit()">
+                  <a class="pure-menu-link">離開</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <hot-table [style.visibility]="(data.length==0) ? 'hidden' : 'visible'" [data]="data" [columns]="columns" [settings]="settingsObj"></hot-table>
+      </div>
+    </div>
+  </div>
+</div>

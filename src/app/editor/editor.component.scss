@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+  height: 100%;
+  .edit-mode {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    .wrapper {
+      height:100%;
+      border: 1px #cccccc dashed;
+      box-sizing: border-box;
+      .toolbars {
+        .pure-menu {
+          background-color: green;
+          color: white;
+          .pure-menu-item {
+            z-index: 1060;
+            .pure-menu-link {
+              padding: 2px 5px 2px 5px;
+              color: white;
+              font-size: 15px;
+              &:hover {
+                background-color: white;
+                color: green;
+              }
+              &:focus {
+                background-color: white;
+                color: green;
+              }
+            }
+            .pure-menu-disabled{
+              padding:0;
+            }
+            .pure-menu-children {
+              z-index: 1060;
+              font-size: 15px;
+              margin-left: 5px;
+              .pure-menu-link {
+                padding: 2px 5px 2px 5px;
+                color: black;
+                &:hover {
+                  background-color: green;
+                  color: white;
+                }
+                &:focus {
+                  background-color: green;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+      .main {}
+    }
+  }
+}
