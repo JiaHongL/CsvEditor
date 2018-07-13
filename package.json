@@ -37,6 +37,7 @@
     "csvtojson": "^2.0.4",
     "electron": "^2.0.3",
     "handsontable": "^4.0.0",
+    "hoek": "^5.0.3",
     "json2csv": "^4.1.4",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
